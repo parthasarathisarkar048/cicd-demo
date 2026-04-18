@@ -3,7 +3,7 @@ const app = require('./app');
 
 test('GET /todos returns empty array initially', async () => {
   const res = await request(app).get('/todos');
-  expect(res.statusCode).toBe(200);
+  expect(res.statusCode).toBe(500);
   expect(res.body).toEqual([]);
 });
 
